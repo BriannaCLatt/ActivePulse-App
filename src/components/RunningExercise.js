@@ -25,18 +25,20 @@ export default function RunningExercise({ exercise, setMenuScreen }) {
     setTimer(0);
     setLaps([]);
   };
-
   const recordLap = () => {
     setLaps((prevLaps) => [...prevLaps, timer]);
   };
 
-  let mins = Math.floor((timer / (1000 * 60)) % 60)
-    .toString()
-    .padStart(2, "0");
-  let secs = Math.floor((timer / 1000) % 60)
-    .toString()
-    .padStart(2, "0");
-  let mills = (timer % 1000).toString().padStart(3, "0");
+  const formatTime = (lapTime) => {
+    const mins = Math.floor((lapTime / (1000 * 60)) % 60)
+      .toString()
+      .padStart(2, "0");
+    const secs = Math.floor((lapTime / 1000) % 60)
+      .toString()
+      .padStart(2, "0");
+    const mills = (lapTime % 1000).toString().padStart(3, "0");
+    return `${mins}:${secs}.${mills}`;
+  };
 
   return (
     
@@ -45,7 +47,7 @@ export default function RunningExercise({ exercise, setMenuScreen }) {
             <p>{exercise.name}</p>
         </div>
       <p style={{ fontSize: "7em", margin: "auto", fontFamily: "monospace" }}>
-        {mins}:{secs}.{mills}
+      {formatTime(timer)}
       </p>
       <div>
         <button style={{ fontSize: "4em" }} onClick={startStop}>
@@ -65,7 +67,7 @@ export default function RunningExercise({ exercise, setMenuScreen }) {
         <p>Lap Times</p>
         <ul>
           {laps.map((lapTime, index) => (
-            <li key={index}>Lap {index + 1}: {lapTime} milliseconds</li>
+            <li key={index}>Lap {index + 1}: {formatTime(lapTime)}</li>
           ))}
         </ul>
       </div>
