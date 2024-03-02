@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ActivePulse-App/static/css/main.89007423.css",
-    "main.js": "/ActivePulse-App/static/js/main.bfa29a32.js",
-    "static/js/453.68d17326.chunk.js": "/ActivePulse-App/static/js/453.68d17326.chunk.js",
-    "index.html": "/ActivePulse-App/index.html",
-    "main.89007423.css.map": "/ActivePulse-App/static/css/main.89007423.css.map",
-    "main.bfa29a32.js.map": "/ActivePulse-App/static/js/main.bfa29a32.js.map",
-    "453.68d17326.chunk.js.map": "/ActivePulse-App/static/js/453.68d17326.chunk.js.map"
+    "main.css": "/ActivePulse_App/static/css/main.89007423.css",
+    "main.js": "/ActivePulse_App/static/js/main.0a2bd2da.js",
+    "static/js/453.68d17326.chunk.js": "/ActivePulse_App/static/js/453.68d17326.chunk.js",
+    "index.html": "/ActivePulse_App/index.html",
+    "main.89007423.css.map": "/ActivePulse_App/static/css/main.89007423.css.map",
+    "main.0a2bd2da.js.map": "/ActivePulse_App/static/js/main.0a2bd2da.js.map",
+    "453.68d17326.chunk.js.map": "/ActivePulse_App/static/js/453.68d17326.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89007423.css",
-    "static/js/main.bfa29a32.js"
+    "static/js/main.0a2bd2da.js"
   ]
 }
